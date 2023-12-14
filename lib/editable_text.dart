@@ -17,7 +17,7 @@ class EditableText extends StatefulWidget {
    final InputDecoration? inputDecoration;
 
    @override
-  State<EditableText> createState() => _EditableTextState(initialText: initialText,onSubmitted: onSubmitted,style: style,overflow: overflow,textAlign: textAlign,textDirection: textDirection,maxLine:maxLine,onEditingComplete:this.onEditingComplete, onChanged:this.onChanged,onTap:this.onTap, inputDecoration:this.inputDecoration);
+  State<EditableText> createState() => _EditableTextState(initialText: initialText,onSubmitted: onSubmitted,style: style,overflow: overflow,textAlign: textAlign,textDirection: textDirection,maxLine:maxLine,onEditingComplete:onEditingComplete, onChanged:onChanged,onTap:onTap, inputDecoration:inputDecoration);
 }
 
 class _EditableTextState extends State<EditableText> {
