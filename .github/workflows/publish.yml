@@ -1,0 +1,14 @@
+name: Editable Text
+
+on:
+  push:
+    tags:
+      - 'v1.0.0'
+
+jobs:
+  publish:
+    permissions:
+      id-token: write # Required for authentication using OIDC
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    # with:
+    #   working-directory: path/to/package/within/repository
